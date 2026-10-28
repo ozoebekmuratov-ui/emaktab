@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baraka Non — Yangi pishgan nonlar</title>
+  <meta name="description" content="Baraka Non nonvoyxonasidan yangi pishgan nonlarni online buyurtma qiling.">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#bosh-sahifa">🍞 Baraka Non</a>
+    <nav>
+      <a href="#bosh-sahifa">Bosh sahifa</a>
+      <a href="#nonlar">Nonlar</a>
+      <a href="#biz-haqimizda">Biz haqimizda</a>
+      <a href="#manzil">Manzil</a>
+    </nav>
+    <a class="cart-link" href="#savatcha">
+      🛒 Savatcha <span id="cart-count">0</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="bosh-sahifa">
+      <div class="hero-content">
+        <span class="eyebrow">🥖 Har kuni yangi va issiq nonlar</span>
+        <h1>Mehr bilan yopilgan, dasturxoningizga munosib non!</h1>
+        <p>
+          Mazali, xushbo‘y va yangi pishgan nonlarni
+          bizdan qulay tarzda buyurtma qiling.
+        </p>
+        <a class="btn" href="#nonlar">Nonlarni ko‘rish →</a>
+        <div class="hero-features">
+          <span>✓ Yangi pishgan</span>
+          <span>✓ Sifatli mahsulot</span>
+          <span>✓ Qulay buyurtma</span>
+        </div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Yangi pishgan nonlar">
+        <span>🥖</span>
+        <span>🍞</span>
+        <span>🥯</span>
+        <p>Har bir non — mehr bilan!</p>
+      </div>
+    </section>
+
+    <section class="section" id="nonlar">
+      <div class="section-heading">
+        <span class="eyebrow">Bizning mahsulotlar</span>
+        <h2>Nonlarimiz ro‘yxati</h2>
+        <p>O‘zingizga yoqqan nonni tanlang va savatchaga qo‘shing.</p>
+      </div>
+
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="order-area" id="savatcha">
+      <div class="section-heading">
+        <span class="eyebrow">Buyurtmangiz</span>
+        <h2>Savatcha</h2>
+        <p>Tanlagan nonlaringiz va umumiy narx.</p>
+      </div>
+
+      <div class="cart-box">
+        <div id="cart-items">
+          <p class="empty-cart">Savatchangiz hozircha bo‘sh.</p>
+        </div>
+        <div class="cart-total">
+          <span>Jami:</span>
+          <strong id="cart-total">0 so‘m</strong>
+        </div>
+
+        <h3>Buyurtma ma’lumotlari</h3>
+        <form id="order-form">
+          <label for="customer-name">Ismingiz</label>
+          <input id="customer-name" name="name"
+                 type="text" placeholder="Ismingizni kiriting" required>
+
+          <label for="customer-phone">Telefon raqamingiz</label>
+          <input id="customer-phone" name="phone"
+                 type="tel" placeholder="+998 90 123 45 67" required>
+
+          <label for="customer-address">Yetkazib berish manzili</label>
+          <textarea id="customer-address" name="address"
+                    placeholder="Manzilingizni kiriting" required></textarea>
+
+          <label for="customer-note">Qo‘shimcha izoh (ixtiyoriy)</label>
+          <textarea id="customer-note" name="note"
+                    placeholder="Masalan, yetkazish vaqtini yozing"></textarea>
+
+          <button class="btn submit-btn" type="submit">
+            Buyurtmani tayyorlash
+          </button>
+          <p class="form-note">
+            Bu demo sayt. Buyurtma haqiqiy nonvoyxonaga avtomatik yuborilmaydi.
+          </p>
+        </form>
+        <div id="order-result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="about section" id="biz-haqimizda">
+      <div>
+        <span class="eyebrow">Biz haqimizda</span>
+        <h2>Nonvoychilik — mehr va mahorat</h2>
+        <p>
+          Baraka Non — oilangiz dasturxoniga mazali nonlar taklif
+          qiluvchi nonvoyxona uchun yaratilgan online do‘kon.
+          Bizning maqsadimiz — har bir mijozga sifatli mahsulot
+          va qulay xizmatni taqdim etish.
+        </p>
+      </div>
+      <div class="about-card">
+        <div>🌾</div>
+        <h3>Sifatli masalliqlar</h3>
+        <p>Mahsulotlar haqida aniq ma’lumot va tarkibni mijozlarga taqdim eting.</p>
+        <div>🔥</div>
+        <h3>Yangi pishgan non</h3>
+        <p>Nonlaringizning pishirish vaqti va mavjudligini shu yerda ko‘rsating.</p>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div><span>🕒</span><h3>Ish vaqti</h3><p>Har kuni: 06:00–20:00</p></div>
+      <div><span>📞</span><h3>Telefon</h3><p>+998 90 123 45 67</p></div>
+      <div><span>🚚</span><h3>Yetkazib berish</h3><p>Hudud va narxni telefon orqali aniqlang</p></div>
+    </section>
+
+    <section class="location section" id="manzil">
+      <div>
+        <span class="eyebrow">Bizni toping</span>
+        <h2>Nonvoyxonamiz manzili</h2>
+        <p><strong>Manzil:</strong> Toshkent shahri, manzilni shu yerga yozing.</p>
+        <p><strong>Telefon:</strong> +998 90 123 45 67</p>
+        <p><strong>Ish vaqti:</strong> Har kuni 06:00–20:00</p>
+        <p class="small-note">
+          Yuqoridagi aloqa ma’lumotlari namuna. Haqiqiy ma’lumotlaringiz bilan almashtiring.
+        </p>
+      </div>
+      <div class="map-placeholder">
+        <span>📍</span>
+        <h3>Bizning manzilimiz</h3>
+        <p>Bu yerga Google Maps xaritasi havolasini joylashtiring.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#bosh-sahifa">🍞 Baraka Non</a>
+    <p>Yangi non — fayzli dasturxon!</p>
+    <p>© <span id="year"></span> Baraka Non. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+</body>
+</html>
